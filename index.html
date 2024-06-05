@@ -223,26 +223,23 @@
         </div>
         <div class="project-imgs">
           <div class="project-img">
-            <div class="project-img1">
-              <img src="./img/image.png" alt="" class="img img1" id="img1">
-             
-            </div>
+              <img id="displayed-image" src="./img/image.png" alt="Display Image">
           </div>
           <div class="project-content">
-            <div class="project1 pb-3" onmouseover="showImage('img1')">
-              <h6 class="fw-bold">High Performance</h6>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, reprehenderit.</p>
-            </div>
-            <div class="project2 pb-3" onmouseover="showImage('img2')">
-              <h6 class="fw-bold">Better Strategy & Quality</h6>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, reprehenderit.</p>
-            </div>
-            <div class="project3" onmouseover="showImage('img3')">
-              <h6 class="fw-bold">Maintain Security</h6>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, reprehenderit.</p>
-            </div>
+              <div class="project1 content-item pb-3" onclick="changeImage('img2')">
+                <h6 class="fw-bold">High Performance</h6>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, reprehenderit.</p>
+              </div>
+              <div class="project2 content-item pb-3 active" onclick="changeImage('img1')">
+                <h6 class="fw-bold">Better Strategy & Quality</h6>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, reprehenderit.</p>
+              </div>
+              <div class="project3 content-item " onclick="changeImage('img3')">
+                <h6 class="fw-bold">Maintain Security</h6>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, reprehenderit.</p>
+              </div>
           </div>
-        </div>
+      </div>
       </div>
     </section>
 <!------------------- Growth section--------------- -->

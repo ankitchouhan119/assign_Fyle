@@ -1,11 +1,17 @@
-function showImage(imageId) {
-    // Hide all images
-    $('.project-img1 img').css('opacity', '0');
-    
-    // Show the hovered image
-    $('#' + imageId).css('opacity', '1');
-  }
-  
+function changeImage(imageId) {
+  const imagePaths = {
+      'img1': './img/image.png',
+      'img2': './img/1.png',
+      'img3': './img/2.png'
+  };
+  $('#displayed-image').attr('src', imagePaths[imageId]);
+
+  $('.content-item').removeClass('active');
+  $(event.currentTarget).addClass('active');
+}
+
+
+
   function showModal() {
     $('.modal').css('display', 'block');
   }
